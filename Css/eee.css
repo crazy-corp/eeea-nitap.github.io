@@ -1,0 +1,86 @@
+.header_2{
+	  position: relative;
+}
+.header_2 ul.nav{
+  	overflow: hidden;
+}
+.header_2 ul.nav li{
+  	position: relative;
+	float: left;
+}
+.header_2 ul.nav li a{
+  	display: block;
+	height: 10px;
+  	opacity: 0;
+  	font-family: serif;
+	color: #848e92;
+  	text-decoration: none;
+	text-align: center;
+  	cursor: default;
+	-webkit-transition: all 0.25s ease;
+  	-moz-transition: all 0.25s ease;
+  	padding-left: 50px;
+  }
+
+.header_2.active ul.nav li a{
+	height: 35px;
+  	opacity: 1;
+  	font-size: 150%;
+	cursor: pointer;
+	padding-top: 6%;
+	padding-right: 25px;
+}
+.header_2{
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.header_2 button.toggle-nav{
+  	position: absolute;
+  	top: 25px;
+  	left: calc(50% - 30px);
+  	width: 60px;
+	height: 35px;
+  	background-color:#0088a9;
+  	color: #fff;
+  	border: none;
+  	vertical-align: middle;
+	outline: none;
+  	cursor: pointer;
+  	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+}
+ .header_2 button.toggle-nav:hover{
+  	height: 50px;
+}
+.header_2 button.toggle-nav span{
+	display: block;
+  	-webkit-transform: rotate(90deg);
+  	-moz-transform: rotate(90deg);
+  	-webkit-transition: all 0.25s ease;
+  	-moz-transition: all 0.25s ease;
+}
+
+/* Style for the plus button when header has active classe name */
+
+.header_2.active button.toggle-nav{
+  top: 35px;
+  background-color: #256f6f;
+}
+.header_2.active button.toggle-nav span{
+	-webkit-transform: rotate(270deg);
+  	-moz-transform: rotate(270deg);
+}
+.checkbtn{
+  font-size: 30px;
+  color: rgba(255,255,255,.5);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px; 
+  display: none;
+}
+@media(max-width:760px){
+  .checkbtn{
+    display: block;
+  }
